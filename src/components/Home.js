@@ -5,7 +5,7 @@ const Home = () => {
         <main className="home">
             Taylor Williams
             <p>Software Engineer</p>
-            <Link to='/portfolio'><button>Enter</button></Link>
+            <Link to='/portfolio'><button className='enter-btn'>Enter</button></Link>
         </main>
     )
 }

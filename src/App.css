@@ -17,8 +17,8 @@
 
 button {
   font-family: 'Reenie Beanie', sans-serif;
-  font-size: 18px;
-  padding: 12px;
+  font-size: 20px;
+  padding: 20px;
   border-radius: 12px;
   background-color: white;
   transition-duration: 0.4s;
@@ -26,6 +26,11 @@ button {
 
 button:hover {
   background-color: lavender;
+}
+
+.enter-btn {
+  padding: 20px;
+  font-size: 20px;
 }
 
 .telfar-img {
