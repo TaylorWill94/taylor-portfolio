@@ -1,38 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 .App {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+.home {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: lavender;
+}
+
+.telfar-img {
+  transition-duration: 0.4s;
+  border: 12px solid lavender;
+}
+
+.telfar-img:hover {
+  border: 12px solid rgb(216, 216, 255);
+}
+
+.portfolio-button {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.contact-header {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.portfolio {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-btn {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contact {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .telfar-img {
+    width: 300px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 780px) {
+  body {
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .telfar-img {
+    width: 500px;
   }
 }
